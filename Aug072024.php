@@ -45,3 +45,83 @@ echo "$num1 / $num2 = " . $num1 / $num2 . "<br>";
 echo "$num1 ^ $num2 = " . $num1 ** $num2 . "<br>";
 
 // 2. Assignment operators
+
+$x = 15;
+$y = 2;
+
+echo "<p>(x,y) = ($x,$y)</p>";
+
+$x = $y;
+echo "<p>(x,y) = ($x,$y)</p>";
+
+$x += $y;// $x = $x + $y;
+echo "<p>(x,y) = ($x,$y)</p>";
+
+// 3. PHP Comparison Operators
+
+echo "<pre>$x > $y = ";
+var_dump($x > $y); 
+echo "</pre>";
+
+echo "<pre>$x < $y = ";
+var_dump($x < $y); 
+echo "</pre>";
+
+echo "<pre>$x >= $y = ";
+var_dump($x >= $y); 
+echo "</pre>";
+
+echo "<pre>$x <= $y = ";
+var_dump($x <= $y); 
+echo "</pre>";
+
+$y = "4";
+
+echo "<pre>$x == $y = ";
+var_dump($x == $y); 
+echo "</pre>";
+
+echo "<pre>$x != $y = ";
+var_dump($x != $y); 
+echo "</pre>";
+
+echo "<pre>$x <> $y = ";
+var_dump($x <> $y); 
+echo "</pre>";
+
+echo "<pre>$x === $y = ";
+var_dump($x === $y); 
+echo "</pre>";
+
+echo "<pre>$x !== $y = ";
+var_dump($x !== $y); 
+echo "</pre>";
+
+echo "<pre>$x <=> $y = ";
+var_dump($x <=> $y); 
+echo "</pre>";
+
+$y = 2;
+
+echo "<pre>$x <=> $y = ";
+var_dump($x <=> $y); 
+echo "</pre>";
+
+$y = 6;
+
+echo "<pre>$x <=> $y = ";
+var_dump($x <=> $y); 
+echo "</pre>";
+
+// 4. PHP Increment / Decrement Operators
+
+$x = 1;
+$y = 1;
+
+echo "<p>($x,$y)</p>";
+//$z = $x + ++$y; // pre-increment
+$z = $x + $y++; // post-increment
+echo "<p>$z</p>";
+echo "<p>($x,$y)</p>";
+
+// 5. PHP Logical Operators
