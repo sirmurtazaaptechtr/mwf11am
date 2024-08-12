@@ -35,3 +35,15 @@ if($percentage >= 80) {
 }else {
     echo "<p>Grade : F</p>";
 }
+
+// Leap year condition: 
+        // 1. If the year is divisible by 4 and not divisible by 100, or
+        // 2. If the year is divisible by 400.
+
+$year = 2001;
+
+if(($year % 400 == 0) || ($year % 100 != 0) && ($year % 4 == 0)) {
+    echo "<p>$year is a leap year and February will be of 29 days</p>";
+}else {
+    echo "<p>$year is not a leap year and February will be of 28 days</p>";
+}
