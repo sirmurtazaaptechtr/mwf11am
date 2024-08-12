@@ -125,3 +125,62 @@ echo "<p>$z</p>";
 echo "<p>($x,$y)</p>";
 
 // 5. PHP Logical Operators
+echo "<pre>true && true = ";
+var_dump(true && true); 
+echo "</pre>";
+echo "<pre>true && false = ";
+var_dump(true && false); 
+echo "</pre>";
+echo "<pre>false && true = ";
+var_dump(false && true); 
+echo "</pre>";
+echo "<pre>false && false = ";
+var_dump(false && false); 
+echo "</pre>";
+
+echo "<pre>true || true = ";
+var_dump(true || true); 
+echo "</pre>";
+echo "<pre>true || false = ";
+var_dump(true || false); 
+echo "</pre>";
+echo "<pre>false || true = ";
+var_dump(false || true); 
+echo "</pre>";
+echo "<pre>false || false = ";
+var_dump(false || false); 
+echo "</pre>";
+
+echo "<pre>true xor true = ";
+var_dump(true xor true); 
+echo "</pre>";
+echo "<pre>true xor false = ";
+var_dump(true xor false); 
+echo "</pre>";
+echo "<pre>false xor true = ";
+var_dump(false xor true); 
+echo "</pre>";
+echo "<pre>false xor false = ";
+var_dump(false xor false); 
+echo "</pre>";
+
+// 6. PHP String Operators
+$text1 = "Aptech";
+$text2 = "Learning";
+
+echo "</p>" . $text1 . " " . $text2 . "</p>";
+
+$text3 = '';
+$text3 .= $text1;
+$text3 .= " ";
+$text3 .= $text2;
+
+echo "<p>$text3</p>";
+
+// 7. PHP Conditional Assignment Operators
+$data4mdb = NULL;
+$data4mdb = 18;
+$data = $data4mdb ?? 0;
+$res = $data/2;
+echo "<p>$res</p>";
+
