@@ -28,6 +28,8 @@ print_r(STUDENTS) ;// we use print_r to display all array elements.
 echo "</pre>";
 echo STUDENTS[2] . "<br>";
 
+// Magic Constant
+
 echo __FILE__ . "<br>";// php predifined magic constant
 echo __DIR__ . "<br>";
 echo __LINE__ . "<br>";
