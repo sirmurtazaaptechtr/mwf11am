@@ -36,7 +36,13 @@ function sum_of_numbers($num1, ...$nums) {
     return $num1;
 }
 
-myfun1();// function call 
+function show_bio ($name, $age, $location = 'Karachi') {
+    echo "<p>Dear $name, How do you do?</p>";
+    echo "<p>You are $age years old.</p>";
+    echo "<p>You Live in $location</p>";
+}
+
+myfun1();// call to the function 
 
 myfun2("Sufiyan"/*function argument*/ );
 myfun2("Muniba");
@@ -46,6 +52,13 @@ myfun3("Sameer",20);
 
 $sum =  myfun4(12,16);
 echo "<p>The result is $sum</p>";
+echo "<p>7 + 13 = " . myfun4(7, 13) . "</p>";
+echo "<p>21 + 73 = " . myfun4(21, 73) . "</p>";
+
 
 $sum = sum_of_numbers(12,13,25,50);
 echo "<p>The result is $sum</p>";
+
+
+show_bio("Zubaida",21);
+show_bio("Abdul Samad",18,'Khuzdar');
