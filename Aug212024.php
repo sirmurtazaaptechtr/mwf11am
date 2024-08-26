@@ -11,6 +11,10 @@
     // echo "<p>Hi, This is Murtaza</p>";
     // echo "<p>Hi, This is Murtaza</p>";
     // echo "<p>Hi, This is Murtaza</p>";
+    
+    foreach($students as $student) {
+        echo "<p>**Hi, This is $student</p>";
+    }
 
     for($cnt = 0;$cnt < count($students);$cnt++) {
         echo "<p>Hi, This is " . $students[$cnt] . "</p>";
