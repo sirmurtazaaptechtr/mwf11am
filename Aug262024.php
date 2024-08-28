@@ -36,7 +36,7 @@ function sum_of_numbers($num1, ...$nums) {
     return $num1;
 }
 
-function show_bio ($name, $age, $location = 'Karachi') {
+function show_bio ($name, $age, $location = 'Karachi'/* Default input */) {
     echo "<p>Dear $name, How do you do?</p>";
     echo "<p>You are $age years old.</p>";
     echo "<p>You Live in $location</p>";
