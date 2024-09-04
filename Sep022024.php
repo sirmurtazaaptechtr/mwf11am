@@ -7,8 +7,8 @@ function greetarr ($input) {
 
 // Declear an array
 
-// $myArr = [];
 // $myArr = array();
+// $myArr = [];
 
 $names = ["Maaz","Sufiyan","Rizwan","Sameer","Nimrah","Muniba","Chand","Ovamir","Hanzala","Samad","Zubaida","Areesha"];
 
@@ -46,3 +46,13 @@ greetarr($names);
 // Remove first Array Items
 array_shift($names);
 greetarr($names);
+
+// append item in between
+array_splice($names,6,0,"Nazeer");
+
+// delete item in between
+array_splice($names,3,1);
+
+echo "<pre>";
+print_r($names);
+echo "</pre>";
