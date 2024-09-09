@@ -10,3 +10,10 @@ function prx ($input) {
     echo "</pre>";
     die();
 }
+// data sanitization 
+function test_input ($input) {
+    $input = trim($input);
+    $input = stripslashes($input);
+    $input = htmlspecialchars($input);
+    return $input;
+}
