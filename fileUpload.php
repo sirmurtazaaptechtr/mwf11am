@@ -9,9 +9,8 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $source_file = $_FILES['fileToUpload']['tmp_name'];
 $uploadOk = true;
 
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-
 // // Allow certain file formats
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
 //     echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
 //     $uploadOk = false;
